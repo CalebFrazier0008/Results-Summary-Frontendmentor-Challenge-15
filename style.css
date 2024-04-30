@@ -1,0 +1,232 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.Container {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.Card {
+  height: 700px;
+  width: 320px;
+  background-color: white;
+  overflow: hidden;
+}
+.Top {
+  height: 47%;
+  width: 100%;
+  border-radius: 0px 0px 30px 30px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+p {
+  color: white;
+  opacity: 80%;
+  font-size: 16px;
+}
+.Circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  height: 125px;
+  width: 125px;
+  border-radius: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Circle > h1 {
+  color: white;
+  height: 45%;
+  width: 50%;
+  font-size: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 800;
+}
+.Top > h3 {
+  color: white;
+  margin-top: 15px;
+}
+.Details {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  padding-top: 10px;
+}
+.Bottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 52%;
+}
+.Bottom > h3 {
+  opacity: 80%;
+}
+.Scores {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+.Sc {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+svg {
+  margin-left: 20px;
+}
+.Sc > h5 {
+  margin-right: 20px;
+}
+
+.Name {
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 110px;
+}
+span {
+  opacity: 50%;
+}
+.Re {
+  color: hsl(0, 100%, 67%);
+}
+.Reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.Memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.Me {
+  color: hsl(39, 100%, 56%);
+}
+.Verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.Ve {
+  color: hsl(166, 100%, 37%);
+}
+.Visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.Vi {
+  color: hsl(234, 85%, 45%);
+}
+button {
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+@media only screen and (min-width: 1200px) {
+  .Card {
+    height: 450px;
+    width: 700px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+  }
+  .Top {
+    height: 100%;
+    width: 50%;
+    border-radius: 0px 25px 25px 0px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .Circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 175px;
+    width: 175px;
+    border-radius: 100px;
+    margin-top: ;
+    margin-bottom: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Details {
+    text-align: center;
+    font-size: 20px;
+    padding: 42px;
+    padding-top: 10px;
+  }
+  .Circle > h1 {
+    color: white;
+    height: 45%;
+    width: 50%;
+    font-size: 70px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 800;
+  }
+  p {
+    color: white;
+    opacity: 80%;
+    font-size: 20px;
+  }
+  .Top > h3 {
+    color: white;
+    margin-top: 35px;
+    font-size: 30px;
+  }
+  .Bottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
+  .Bottom > h3 {
+    font-size: 22px;
+    opacity: 80%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .Scores {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    gap: 20px;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  button {
+    margin-top: 30px;
+    border-radius: 100px;
+    margin-left: 20px;
+    border: none;
+    padding: 18px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-weight: 600;
+  }
+}
